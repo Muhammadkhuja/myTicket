@@ -14,6 +14,17 @@ import { VenueptypesModule } from './venueptypes/venueptypes.module';
 import { TypesModule } from './types/types.module';
 import { SeatModule } from './seat/seat.module';
 import { SeattypeModule } from './seattype/seattype.module';
+import { EventModule } from './event/event.module';
+import { LangModule } from './lang/lang.module';
+import { HumancategoryModule } from './humancategory/humancategory.module';
+import { EventypeModule } from './eventype/eventype.module';
+import { TicketstatusModule } from './ticketstatus/ticketstatus.module';
+import { TicketModule } from './ticket/ticket.module';
+import { CartModule } from './cart/cart.module';
+import { CartitemModule } from './cartitem/cartitem.module';
+import { PaymentmethodModule } from './paymentmethod/paymentmethod.module';
+import { DeliverymethodModule } from './deliverymethod/deliverymethod.module';
+import { BookingModule } from './booking/booking.module';
 
 @Module({
   imports: [ConfigModule.forRoot({ envFilePath: ".env", isGlobal: true }),
@@ -30,7 +41,18 @@ import { SeattypeModule } from './seattype/seattype.module';
     VenueptypesModule,
     TypesModule,
     SeatModule,
-    SeattypeModule
+    SeattypeModule,
+    EventModule,
+    LangModule,
+    HumancategoryModule,
+    EventypeModule,
+    TicketstatusModule,
+    TicketModule,
+    CartModule,
+    CartitemModule,
+    PaymentmethodModule,
+    DeliverymethodModule,
+    BookingModule
   ],
   controllers: [],
   providers: [],
