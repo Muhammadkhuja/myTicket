@@ -7,7 +7,6 @@ export type LangDocument = HydratedDocument<Lang>;
 export class Lang {
   @Prop()
   name: string;
-
 }
 
 export const LangSchema = SchemaFactory.createForClass(Lang);

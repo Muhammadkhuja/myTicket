@@ -1,7 +1,7 @@
-import { Body, Controller, HttpCode, Post, Req, Res } from '@nestjs/common';
-import { AuthService } from './auth.service';
-import { LoginDto } from './dto/login.dto';
-import { Request, Response } from 'express';
+import { Body, Controller, HttpCode, Post, Req, Res } from "@nestjs/common";
+import { AuthService } from "./auth.service";
+import { LoginDto } from "./dto/login.dto";
+import { Request, Response } from "express";
 
 @Controller("auth")
 export class AuthController {
@@ -44,7 +44,10 @@ export class AuthController {
 
   @Post("logoutcust")
   @HttpCode(200)
-  async logoutcust(@Req() req: Request, @Res({ passthrough: true }) res: Response) {
+  async logoutcust(
+    @Req() req: Request,
+    @Res({ passthrough: true }) res: Response
+  ) {
     return this.authService.logoutCustomer(req, res);
   }
 

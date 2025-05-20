@@ -25,6 +25,7 @@ export class DeliverymethodService {
     if (!item) {
       throw new NotFoundException("Yetkazib berish usuli topilmadi");
     }
+    return item;
   }
 
   update(id: string, updateDeliverymethodDto: UpdateDeliverymethodDto) {
@@ -35,6 +36,7 @@ export class DeliverymethodService {
     if (!updated) {
       throw new NotFoundException("Yetkazib berish usuli topilmadi");
     }
+    return updated;
   }
 
   remove(id: string) {
@@ -42,5 +44,6 @@ export class DeliverymethodService {
     if (!deleted) {
       throw new NotFoundException("Yetkazib berish usuli topilmadi");
     }
+    return deleted;
   }
 }

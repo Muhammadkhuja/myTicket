@@ -22,6 +22,7 @@ export class LangService {
     if (!lang) {
       throw new NotFoundException("Lang topilmadi");
     }
+    return lang;
   }
 
   update(id: string, updateLangDto: UpdateLangDto) {
@@ -29,6 +30,7 @@ export class LangService {
     if (!updated) {
       throw new NotFoundException("Lang topilmadi");
     }
+    return updated;
   }
 
   remove(id: string) {
@@ -36,5 +38,6 @@ export class LangService {
     if (!deleted) {
       throw new NotFoundException("Lang topilmadi");
     }
+    return deleted;
   }
 }

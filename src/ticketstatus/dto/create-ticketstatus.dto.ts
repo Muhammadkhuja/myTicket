@@ -1,3 +1,3 @@
 export class CreateTicketstatusDto {
-    name: string
+  name: string;
 }

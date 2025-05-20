@@ -22,6 +22,7 @@ export class VenueService {
     if (!venue) {
       throw new NotFoundException("Venue topilmadi");
     }
+    return venue;
   }
 
   update(id: string, updateVenueDto: UpdateVenueDto) {
@@ -29,6 +30,7 @@ export class VenueService {
     if (!updated) {
       throw new NotFoundException("Venue topilmadi");
     }
+    return updated;
   }
 
   remove(id: string) {
@@ -36,5 +38,6 @@ export class VenueService {
     if (!deleted) {
       throw new NotFoundException("Venue topilmadi");
     }
+    return deleted;
   }
 }

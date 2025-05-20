@@ -42,6 +42,7 @@ export class DistrictService {
     if (!district) {
       throw new NotFoundException("District topilmadi");
     }
+    return district;
   }
 
   update(id: string, updateDistrictDto: UpdateDistrictDto) {
@@ -49,6 +50,7 @@ export class DistrictService {
     if (!update) {
       throw new NotFoundException("District topilmadi");
     }
+    return update;
   }
 
   remove(id: string) {
@@ -56,5 +58,6 @@ export class DistrictService {
     if (!delet) {
       throw new NotFoundException("District topilmadi");
     }
+    return delet;
   }
 }

@@ -8,9 +8,8 @@ export class Eventype {
   @Prop()
   name: string;
 
-  @Prop({ type: Types.ObjectId, ref: "Eventype"})
+  @Prop({ type: Types.ObjectId, ref: "Eventype" })
   parent_id: Types.ObjectId;
-
 }
 
 export const EventypeSchema = SchemaFactory.createForClass(Eventype);

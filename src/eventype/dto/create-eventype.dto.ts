@@ -1,1 +1,3 @@
-export class CreateEventypeDto {}
+export class CreateEventypeDto {
+  name: string;
+}

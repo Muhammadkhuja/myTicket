@@ -12,7 +12,7 @@ export class CustomerAddress {
   @Prop()
   name: string;
 
-  @Prop({type: Types.ObjectId,ref: "Customer"})
+  @Prop({ type: Types.ObjectId, ref: "Customer" })
   cutomer_id: Types.ObjectId;
 
   @Prop()
@@ -28,10 +28,11 @@ export class CustomerAddress {
   location: string;
 
   @Prop()
-  post_index: string
+  post_index: string;
 
   @Prop()
   info: string;
 }
 
-export const CustomerAddressSchema = SchemaFactory.createForClass(CustomerAddress);
+export const CustomerAddressSchema =
+  SchemaFactory.createForClass(CustomerAddress);

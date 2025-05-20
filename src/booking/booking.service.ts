@@ -24,6 +24,7 @@ export class BookingService {
     if (!item) {
       throw new NotFoundException("Buyurtma topilmadi");
     }
+    return item;
   }
 
   update(id: string, updateBookingDto: UpdateBookingDto) {
@@ -31,6 +32,7 @@ export class BookingService {
     if (!updated) {
       throw new NotFoundException("Buyurtma topilmadi");
     }
+    return updated;
   }
 
   remove(id: string) {
@@ -38,5 +40,6 @@ export class BookingService {
     if (!deleted) {
       throw new NotFoundException("Buyurtma topilmadi");
     }
+    return deleted;
   }
 }

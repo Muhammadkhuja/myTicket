@@ -24,6 +24,7 @@ export class VenuephotoService {
     if (!venuephoto) {
       throw new NotFoundException("Venuephoto topilmadi");
     }
+    return venuephoto;
   }
 
   update(id: string, updateVenuephotoDto: UpdateVenuephotoDto) {
@@ -34,6 +35,7 @@ export class VenuephotoService {
     if (!updated) {
       throw new NotFoundException("Venuephoto topilmadi");
     }
+    return updated;
   }
 
   remove(id: string) {
@@ -41,5 +43,6 @@ export class VenuephotoService {
     if (!deleted) {
       throw new NotFoundException("Venuephoto topilmadi");
     }
+    return deleted;
   }
 }

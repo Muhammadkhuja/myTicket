@@ -6,20 +6,18 @@ export type RegionDocument = HydratedDocument<Region>;
 
 @Schema()
 export class Region {
-  @Prop({ required: true})
+  @Prop({ required: true })
   name: string;
 
   @Prop({
-    type:[
-        {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: "District"
-        }
-    ]
+    type: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "District",
+      },
+    ],
   })
-  districts: District[]
- 
+  districts: District[];
 }
 
 export const RegionSchema = SchemaFactory.createForClass(Region);
-  

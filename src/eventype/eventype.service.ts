@@ -24,6 +24,7 @@ export class EventypeService {
     if (!eventype) {
       throw new NotFoundException("Eventype topilmadi");
     }
+    return eventype;
   }
 
   update(id: string, updateEventypeDto: UpdateEventypeDto) {
@@ -31,6 +32,7 @@ export class EventypeService {
     if (!updated) {
       throw new NotFoundException("Eventype topilmadi");
     }
+    return updated;
   }
 
   remove(id: string) {
@@ -38,5 +40,6 @@ export class EventypeService {
     if (!deleted) {
       throw new NotFoundException("Eventype topilmadi");
     }
+    return deleted;
   }
 }

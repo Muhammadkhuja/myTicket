@@ -1,3 +1,3 @@
 export class CreatePaymentmethodDto {
-    name: string
+  name: string;
 }

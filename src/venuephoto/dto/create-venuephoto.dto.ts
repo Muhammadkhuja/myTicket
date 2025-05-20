@@ -1,1 +1,3 @@
-export class CreateVenuephotoDto {}
+export class CreateVenuephotoDto {
+  url: string;
+}

@@ -40,6 +40,7 @@ export class AdminService {
     if (!admid) {
       throw new NotFoundException("Admin topilmadi");
     }
+    return admid;
   }
 
   update(id: string, updateAdminDto: UpdateAdminDto) {
@@ -47,6 +48,7 @@ export class AdminService {
     if (!updates) {
       throw new NotFoundException("Admin topilmadi");
     }
+    return updates;
   }
 
   remove(id: string) {

@@ -25,6 +25,7 @@ export class TicketstatusService {
     if (!ticketstatus) {
       throw new NotFoundException("Ticketstatus topilmadi");
     }
+    return ticketstatus;
   }
 
   update(id: string, updateTicketstatusDto: UpdateTicketstatusDto) {
@@ -35,6 +36,7 @@ export class TicketstatusService {
     if (!updated) {
       throw new NotFoundException("Ticketstatus topilmadi");
     }
+    return updated;
   }
 
   remove(id: string) {
@@ -42,5 +44,6 @@ export class TicketstatusService {
     if (!deleted) {
       throw new NotFoundException("Ticketstatus topilmadi");
     }
+    return deleted;
   }
 }

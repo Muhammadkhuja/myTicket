@@ -22,6 +22,7 @@ export class EventService {
     if (!event) {
       throw new NotFoundException("Event topilmadi");
     }
+    return event;
   }
 
   update(id: string, updateEventDto: UpdateEventDto) {
@@ -29,6 +30,7 @@ export class EventService {
     if (!updated) {
       throw new NotFoundException("Event topilmadi");
     }
+    return updated;
   }
 
   remove(id: string) {
@@ -36,5 +38,6 @@ export class EventService {
     if (!deleted) {
       throw new NotFoundException("Event topilmadi");
     }
+    return deleted;
   }
 }

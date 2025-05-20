@@ -1,4 +1,9 @@
-import { BadRequestException, ForbiddenException, Injectable, UnauthorizedException } from "@nestjs/common";
+import {
+  BadRequestException,
+  ForbiddenException,
+  Injectable,
+  UnauthorizedException,
+} from "@nestjs/common";
 import { JwtService } from "@nestjs/jwt";
 import { AdminDocument } from "../admin/schemas/admin.schemas";
 import { LoginDto } from "./dto/login.dto";
@@ -163,7 +168,7 @@ export class AuthService {
   async logincustomer(loginDto: LoginDto, res: Response) {
     const customer = await this.cutomerService.findByEmail(loginDto.email);
     console.log(customer);
-    
+
     if (!customer) {
       throw new UnauthorizedException("Email yoki parol xato");
     }

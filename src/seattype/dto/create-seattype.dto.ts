@@ -1,3 +1,3 @@
 export class CreateSeattypeDto {
-    name: string
+  name: string;
 }

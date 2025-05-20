@@ -24,6 +24,7 @@ export class VenueptypesService {
     if (!venueptype) {
       throw new NotFoundException("Venueptype topilmadi");
     }
+    return venueptype;
   }
 
   update(id: string, updateVenueptypeDto: UpdateVenueptypeDto) {
@@ -34,6 +35,7 @@ export class VenueptypesService {
     if (!updated) {
       throw new NotFoundException("Venueptype topilmadi");
     }
+    return updated;
   }
 
   remove(id: string) {
@@ -41,5 +43,6 @@ export class VenueptypesService {
     if (!deleted) {
       throw new NotFoundException("Venueptype topilmadi");
     }
+    return deleted;
   }
 }

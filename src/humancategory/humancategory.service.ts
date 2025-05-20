@@ -25,6 +25,7 @@ export class HumancategoryService {
     if (!humancategory) {
       throw new NotFoundException("Humancategory topilmadi");
     }
+    return humancategory;
   }
 
   update(id: string, updateHumancategoryDto: UpdateHumancategoryDto) {
@@ -35,6 +36,7 @@ export class HumancategoryService {
     if (!updated) {
       throw new NotFoundException("Humancategory topilmadi");
     }
+    return updated;
   }
 
   remove(id: string) {
@@ -42,5 +44,6 @@ export class HumancategoryService {
     if (!deleted) {
       throw new NotFoundException("Humancategory topilmadi");
     }
+    return deleted;
   }
 }

@@ -1,8 +1,7 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 import { HydratedDocument, Types } from "mongoose";
 
-export type VenuePhotoDocument = HydratedDocument<Venuephoto>
-
+export type VenuePhotoDocument = HydratedDocument<Venuephoto>;
 
 @Schema()
 export class Venuephoto {
@@ -13,5 +12,4 @@ export class Venuephoto {
   venue_id: Types.ObjectId;
 }
 
-
-export const VenuephotoSchema = SchemaFactory.createForClass(Venuephoto)
+export const VenuephotoSchema = SchemaFactory.createForClass(Venuephoto);

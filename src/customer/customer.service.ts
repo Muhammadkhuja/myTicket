@@ -39,10 +39,11 @@ export class CustomerService {
   }
 
   findOne(id: string) {
-    const admid = this.customerSchema.findById(id);
-    if (!admid) {
+    const customer = this.customerSchema.findById(id);
+    if (!customer) {
       throw new NotFoundException("Customer topilmadi");
     }
+    return customer;
   }
 
   update(id: string, updateCustomerDto: UpdateCustomerDto) {
@@ -53,6 +54,7 @@ export class CustomerService {
     if (!updates) {
       throw new NotFoundException("Customer topilmadi");
     }
+    return updates;
   }
 
   remove(id: string) {

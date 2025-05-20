@@ -22,6 +22,7 @@ export class TypesService {
     if (!type) {
       throw new NotFoundException("Type topilmadi");
     }
+    return type;
   }
 
   update(id: string, updateTypeDto: UpdateTypeDto) {
@@ -29,6 +30,7 @@ export class TypesService {
     if (!updated) {
       throw new NotFoundException("Type topilmadi");
     }
+    return updated;
   }
 
   remove(id: string) {
@@ -36,5 +38,6 @@ export class TypesService {
     if (!deleted) {
       throw new NotFoundException("Type topilmadi");
     }
+    return deleted;
   }
 }

@@ -24,6 +24,7 @@ export class SeattypeService {
     if (!seattype) {
       throw new NotFoundException("Seattype topilmadi");
     }
+    return seattype;
   }
 
   update(id: string, updateSeattypeDto: UpdateSeattypeDto) {
@@ -31,6 +32,7 @@ export class SeattypeService {
     if (!updated) {
       throw new NotFoundException("Seattype topilmadi");
     }
+    return updated;
   }
 
   remove(id: string) {
@@ -38,5 +40,6 @@ export class SeattypeService {
     if (!deleted) {
       throw new NotFoundException("Seattype topilmadi");
     }
+    return deleted;
   }
 }

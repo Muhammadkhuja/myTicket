@@ -5,7 +5,7 @@ export type CartDocument = HydratedDocument<Cart>;
 
 @Schema()
 export class Cart {
-  @Prop({ type: Types.ObjectId, ref: "Customer"})
+  @Prop({ type: Types.ObjectId, ref: "Customer" })
   customer_id: Types.ObjectId;
 
   @Prop()

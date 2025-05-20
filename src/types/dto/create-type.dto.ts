@@ -1,3 +1,3 @@
 export class CreateTypeDto {
-    name: string
+  name: string;
 }

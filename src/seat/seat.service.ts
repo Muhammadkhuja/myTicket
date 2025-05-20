@@ -22,6 +22,7 @@ export class SeatService {
     if (!seat) {
       throw new NotFoundException("Seat topilmadi");
     }
+    return seat;
   }
 
   update(id: string, updateSeatDto: UpdateSeatDto) {
@@ -29,6 +30,7 @@ export class SeatService {
     if (!updated) {
       throw new NotFoundException("Seat topilmadi");
     }
+    return updated;
   }
 
   remove(id: string) {
@@ -36,5 +38,6 @@ export class SeatService {
     if (!deleted) {
       throw new NotFoundException("Seat topilmadi");
     }
+    return deleted;
   }
 }

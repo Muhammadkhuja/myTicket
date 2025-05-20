@@ -1,3 +1,3 @@
 export class CreateRegionDto {
-    name: string
+  name: string;
 }

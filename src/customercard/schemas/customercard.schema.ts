@@ -8,7 +8,7 @@ export class CustomerCard {
   save() {
     throw new Error("Method not implemented.");
   }
-  @Prop({type: Types.ObjectId,ref: "Customer"})
+  @Prop({ type: Types.ObjectId, ref: "Customer" })
   cutomer_id: Types.ObjectId;
 
   @Prop()

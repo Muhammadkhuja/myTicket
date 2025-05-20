@@ -37,7 +37,6 @@ export class Customer {
 
   @Prop()
   refresh_token: string;
-
 }
 
 export const CustomerSchema = SchemaFactory.createForClass(Customer);
