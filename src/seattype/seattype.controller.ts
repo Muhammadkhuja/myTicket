@@ -19,16 +19,16 @@ export class SeattypeController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.seattypeService.findOne(+id);
+    return this.seattypeService.findOne(id);
   }
 
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateSeattypeDto: UpdateSeattypeDto) {
-    return this.seattypeService.update(+id, updateSeattypeDto);
+    return this.seattypeService.update(id, updateSeattypeDto);
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.seattypeService.remove(+id);
+    return this.seattypeService.remove(id);
   }
 }

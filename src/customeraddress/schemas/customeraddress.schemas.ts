@@ -5,10 +5,6 @@ export type CustomerAddressDocument = HydratedDocument<CustomerAddress>;
 
 @Schema()
 export class CustomerAddress {
-  save() {
-    throw new Error("Method not implemented.");
-  }
-
   @Prop()
   name: string;
 

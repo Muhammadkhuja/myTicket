@@ -19,16 +19,16 @@ export class EventypeController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.eventypeService.findOne(+id);
+    return this.eventypeService.findOne(id);
   }
 
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateEventypeDto: UpdateEventypeDto) {
-    return this.eventypeService.update(+id, updateEventypeDto);
+    return this.eventypeService.update(id, updateEventypeDto);
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.eventypeService.remove(+id);
+    return this.eventypeService.remove(id);
   }
 }

@@ -19,16 +19,16 @@ export class HumancategoryController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.humancategoryService.findOne(+id);
+    return this.humancategoryService.findOne(id);
   }
 
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateHumancategoryDto: UpdateHumancategoryDto) {
-    return this.humancategoryService.update(+id, updateHumancategoryDto);
+    return this.humancategoryService.update(id, updateHumancategoryDto);
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.humancategoryService.remove(+id);
+    return this.humancategoryService.remove(id);
   }
 }
